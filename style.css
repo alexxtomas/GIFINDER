@@ -1,0 +1,115 @@
+/* Fonts  */
+@import url('https://fonts.googleapis.com/css2?family=PT+Mono&family=Roboto:wght@500;900&display=swap');
+
+
+
+/* Palette */
+:root {
+  --primary: #fff;
+  --secondary: #c2b19a;
+  --background: #000;
+}
+
+/* Reset  */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  /* color: inherit; */
+}
+
+li {
+  list-style: none;
+}
+
+/* Global  */
+
+body {
+  font-family: 'PT Mono', monospace;
+  background-color: var(--background);
+}
+
+/* Header */
+h1 {
+  text-transform: uppercase;
+  background-image: linear-gradient(-225deg,
+      #231557 0%,
+      #44107a 29%,
+      #ff1361 67%,
+      #fff800 100%);
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+  font-size: 50px;
+  letter-spacing: 8px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  flex-wrap: wrap;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 30%;
+  flex-wrap: wrap;
+
+}
+
+ul li a span {
+  text-align: center;
+  width: 100px;
+  color: #fff;
+  display: block;
+  font-size: 22px;
+}
+
+
+/* Main  */
+
+main {
+  height: 88.3vh;
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+main form {
+  border: 1px solid white;
+  text-align: center;
+
+
+}
+
+main form label {
+  color: #fff;
+  display: block;
+  margin: 20px;
+  font-size: 100px;
+  font-family: "Roboto";
+  font-weight: 900;
+  /* margi */
+}
