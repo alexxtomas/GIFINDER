@@ -1,10 +1,12 @@
 import Gifs from '../components/Gifs/Gifs'
 import giphhyService from '../services/GIPHY/service'
+import { $ } from './$'
+import { $All } from './$All'
 
 export const searchEngineSubmit = () => {
-  const main = document.querySelector('main')
-  const section = document.createElement('section')
-  section.className = 'gifs'
+  const main = $('main')
+  const div = document.createElement('div')
+  div.className = 'gallery'
   let inputValue
 
   document.addEventListener('input', evt => {
@@ -13,15 +15,18 @@ export const searchEngineSubmit = () => {
 
   document.addEventListener('submit', evt => {
     evt.preventDefault()
-    const findExistentGifts = document.querySelectorAll('.gif-container')
-    findExistentGifts?.forEach(e => e.remove())
-    console.log(inputValue)
+    if (!inputValue) return
+    const findExistentGifts = $All('.gif-container')
+    findExistentGifts?.forEach(e => {
+      e.remove()
+    })
     giphhyService.getGifsByWord(inputValue)
-      .then(({ data: gifts }) => {
-        document.querySelector('input').value = ' '
-        const relevantGifsInfo = gifts.map(({ title, images }) => ({ title, image: images.fixed_height.webp }))
-        section.innerHTML += Gifs(relevantGifsInfo)
-        main.appendChild(section)
+      .then(({ data: gifs }) => {
+        if (gifs.length === 0) window.alert(`We have not found any gif of ${inputValue}`)
+        $('input').value = ' '
+        const relevantGifsInfo = gifs.map(({ title, images }) => ({ title, image: images.fixed_height.webp }))
+        div.innerHTML += Gifs(relevantGifsInfo)
+        main.appendChild(div)
       })
   })
 }

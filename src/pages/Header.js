@@ -1,8 +1,9 @@
 // import Menu from '../components/Menu'
 import Nav from '../components/Nav/Nav'
 import Title from '../components/Title'
+import { $ } from '../utilities/$'
 
-const app = document.querySelector('#app')
+const app = $('#app')
 
 export const initHeader = () => Header()
 

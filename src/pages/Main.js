@@ -1,5 +1,6 @@
 import SearchEngine from '../components/SearchEngine'
-const app = document.querySelector('#app')
+import { $ } from '../utilities/$'
+const app = $('#app')
 
 export const initMain = () => Main()
 
