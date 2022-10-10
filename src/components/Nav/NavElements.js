@@ -1,8 +1,8 @@
 import { removeComas } from '../../utilities/removeComas'
-const defaultContent = [{ text: 'Home', href: '#' }, { text: 'About', href: '#' }, { text: 'Contact', href: '#' }]
+const defaultContent = [{ text: 'Home' }, { text: 'About' }, { text: 'Contact' }]
 
 const NavElements = (content = defaultContent) => {
-  const elements = content.map(({ text, href }) => `<li><a href="${href}"><span>${text}</span></a></li>`)
+  const elements = content.map(({ text }) => `<li><span>${text}</span></li>`)
 
   return removeComas(elements.toString())
 }

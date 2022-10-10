@@ -69,12 +69,13 @@ ul {
   /* flex-wrap: wrap; */
 }
 
-ul li a span {
+ul li span {
   text-align: center;
   width: 100px;
   color: #fff;
   display: block;
   font-size: 22px;
+  cursor: pointer;
 }
 
 
@@ -191,6 +192,121 @@ main form button:hover {
   background: rgba(0, 0, 0, .6);
   font-size: 15px;
 }
+
+
+/* Trending Animated Text */
+.trending {
+  position: relative;
+  -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0, 0, 0, .2));
+  font-size: 60px;
+}
+
+.trending span {
+  /* font-family: 'Alfa Slab One', cursive; */
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  position: relative;
+  display: inline-block;
+  color: #fff;
+  text-transform: uppercase;
+  animation: waviy 1s infinite;
+  animation-delay: calc(.1s * var(--i));
+  font-size: 120px;
+  text-shadow: 1px 1px 118px #fff;
+}
+
+@keyframes waviy {
+
+  0%,
+  40%,
+  100% {
+    transform: translateY(0)
+  }
+
+  20% {
+    transform: translateY(-20px)
+  }
+}
+
+
+/* Random Gif  */
+
+.gif-container-random {
+  text-align: center;
+
+  position: relative;
+  width: 30%;
+  height: 400px;
+  cursor: pointer;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+.gif-container-random img {
+  width: 100%;
+  height: 100%;
+}
+
+.gif-container-random .after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  color: #FFF;
+}
+
+.gif-container-random:hover .after {
+  display: block;
+  background: rgba(0, 0, 0, .6);
+  font-size: 15px;
+}
+
+/* Change Button */
+.change {
+  margin-top: 30px;
+  background-color: #cf245f;
+  background-image: linear-gradient(to bottom right, #fcd34d, #ef4444, #ec4899);
+  border: 0;
+  border-radius: .25rem;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.75rem;
+  padding: 1rem 1.25rem;
+  text-align: center;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 30%;
+  margin: 5px auto;
+}
+
+.change:hover {
+  box-shadow: none;
+}
+
+/* Footer  */
+
+.gallery {
+  border: 1px solid red;
+}
+
+footer {
+  display: flex;
+  border: 1px solid #fff
+}
+
+.giphy img {
+  width: 60px;
+  height: 100px;
+}
+
+
 
 /* Header  */
 @media screen and (max-width: 1285.60px) {
@@ -381,5 +497,123 @@ main form button:hover {
     font-size: 25px;
     height: 50px;
     width: 90px;
+  }
+}
+
+/* Trending Animated Text */
+
+@media screen and (max-width: 1045px) {
+  .trending {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 895px) {
+  .trending span {
+    font-size: 100px;
+  }
+}
+
+
+@media screen and (max-width: 783px) {
+  .trending span {
+    font-size: 90px;
+  }
+
+}
+
+@media screen and (max-width: 710px) {
+  .trending span {
+    font-size: 70px;
+  }
+
+}
+
+@media screen and (max-width: 595px) {
+  .trending span {
+    font-size: 60px;
+  }
+
+}
+
+
+@media screen and (max-width: 553px) {
+  main {
+    margin-top: 20px;
+  }
+
+  .trending span {
+    font-size: 50px;
+
+  }
+
+}
+
+@media screen and (max-width: 501px) {
+  .trending span {
+    font-size: 45px;
+
+  }
+
+}
+
+@media screen and (max-width: 451px) {
+  .trending {
+    margin-top: 20px;
+  }
+
+  .trending span {
+    font-size: 45px;
+  }
+}
+
+
+
+@media screen and (max-width: 426px) {
+
+  .trending span:last-of-type {
+    /* left: 50px; */
+    top: 61px;
+    right: 205px;
+  }
+}
+
+@media screen and (max-width: 391px) {
+  .trending {
+    margin-left: 25px;
+    margin-top: 50px;
+  }
+
+  .trending span {
+    font-size: 45px;
+  }
+
+
+}
+
+@media screen and (max-width: 353px) {
+  .trending span {
+    font-size: 38px;
+  }
+}
+
+@media screen and (max-width: 315px) {
+  .trending {
+    margin-top: 50px;
+  }
+
+  .trending span {
+    font-size: 33px;
+  }
+}
+
+/* Change Button */
+@media (min-width: 1024px) {
+  .chage {
+    font-size: 1.5rem;
+    /* 24px */
+    padding: 1rem 1.5rem;
+    line-height: 2rem;
+    /* 32px */
   }
 }

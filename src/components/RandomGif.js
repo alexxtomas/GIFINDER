@@ -5,9 +5,8 @@ const RandomGif = async () => {
   const gif = await gifsService.getRandomGifs()
 
   const relevantGifInfo = { title: gif.data.title, image: gif.data.images.fixed_height.webp }
-  console.log(relevantGifInfo)
   return `
-    ${Gif(relevantGifInfo.image, relevantGifInfo.title)}
+    ${Gif(relevantGifInfo.image, relevantGifInfo.title, 'Random')}
     
   `
 }

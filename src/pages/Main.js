@@ -25,11 +25,11 @@ const Main = async (page = 'Home') => {
       </main>
     `
   } else if (page === 'Random') {
-    app.innerHTML += `
-                <main>
+    const main = document.createElement('main')
+    main.innerHTML += `
+                  ${Button('Change', 'change')}
                     ${await RandomGif()}
-                    ${Button('Change', 'change')}
-               </main>
             `
+    app.appendChild(main)
   }
 }

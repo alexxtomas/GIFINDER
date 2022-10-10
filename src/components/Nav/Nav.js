@@ -1,5 +1,5 @@
 import NavElements from './NavElements'
-const navContent = [{ text: 'Home', href: '/index.html' }, { text: 'Trending', href: '/src/pages/Trending/index.html' }, { text: 'Random', href: '/src/pages/Random/index.html' }]
+const navContent = [{ text: 'Home' }, { text: 'Trending' }, { text: 'Random' }]
 
 const Nav = () => {
   return `
