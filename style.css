@@ -603,3 +603,90 @@ main form button:hover {
     /* 32px */
   }
 }
+
+/* Random Gif  */
+@media screen and (max-width: 1286px) {
+  .gif-container-random {
+
+    height: 290px;
+
+  }
+}
+
+@media screen and (max-width: 1090px) {
+  .gif-container-random {
+
+    height: 280px;
+
+  }
+
+}
+
+@media screen and (max-width: 1090px) {
+  .gif-container-random {
+    width: 40%;
+    height: 270px;
+  }
+
+  .change {
+    width: 40%
+  }
+
+}
+
+@media screen and (max-width: 760px) {
+  .gif-container-random {
+    width: 50%;
+    height: 230px;
+  }
+
+  .change {
+    width: 50%
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .gif-container-random {
+    width: 60%;
+  }
+
+  .change {
+    width: 60%
+  }
+
+}
+
+@media screen and (max-width: 450px) {
+  .gif-container-random {
+    width: 70%;
+  }
+
+  .change {
+    width: 70%
+  }
+
+}
+
+@media screen and (max-width: 350px) {
+  .gif-container-random {
+    width: 80%;
+    height: 220px;
+  }
+
+  .change {
+    width: 80%
+  }
+
+}
+
+@media screen and (max-width: 350px) {
+  .gif-container-random {
+    width: 95%;
+    height: 220px;
+  }
+
+  .change {
+    width: 95%
+  }
+
+}
