@@ -546,6 +546,7 @@ main form button:hover {
 @media screen and (max-width: 451px) {
   .trending {
     margin-top: 20px;
+    margin-right: 10px;
   }
 
   .trending span {
@@ -555,26 +556,14 @@ main form button:hover {
 
 
 
-@media screen and (max-width: 426px) {
-
-  .trending span:last-of-type {
-    /* left: 50px; */
-    top: 61px;
-    right: 205px;
-  }
-}
-
-@media screen and (max-width: 391px) {
+@media screen and (max-width: 392px) {
   .trending {
-    margin-left: 25px;
-    margin-top: 50px;
+    margin-left: 10px;
   }
 
   .trending span {
-    font-size: 45px;
+    font-size: 40px;
   }
-
-
 }
 
 @media screen and (max-width: 353px) {
@@ -583,13 +572,17 @@ main form button:hover {
   }
 }
 
-@media screen and (max-width: 315px) {
-  .trending {
-    margin-top: 50px;
-  }
+@media screen and (max-width: 330px) {
 
   .trending span {
-    font-size: 33px;
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 280px) {
+
+  .trending span {
+    font-size: 24px;
   }
 }
 
