@@ -307,9 +307,7 @@ main {
 }
 
 @media screen and (max-width: 432px) {
-    .trending span:last-of-type {
-        position: relative;
-    }
+    .trending span:last-of-type {}
 }
 
 @media screen and (max-width: 426px) {
@@ -319,6 +317,19 @@ main {
         top: 61px;
         right: 205px;
     }
+}
+
+@media screen and (max-width: 391px) {
+    .trending {
+        margin-left: 25px;
+        margin-top: 50px;
+    }
+
+    .trending span {
+        font-size: 45px;
+    }
+
+
 }
 
 @media screen and (max-width: 353px) {

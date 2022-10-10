@@ -1,5 +1,5 @@
 
-const SearchEngine = (labelText, action) => `
+const SearchEngine = (labelText) => `
         <form>
             <label for="search-engine">
                 ${labelText}
