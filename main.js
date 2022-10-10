@@ -5,5 +5,5 @@ import { searchEngineSubmit } from './src/utilities/searchEngineSubmit'
 import './style.css'
 
 initHeader()
-initMain()
+initMain('Home')
 searchEngineSubmit()

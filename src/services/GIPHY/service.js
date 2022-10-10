@@ -4,7 +4,7 @@ const getGifsByWord = (word) =>
     .then(data => data)
 
 const getTrendingGifs = () =>
-  fetch('https://api.giphy.com/v1/gifs/random?api_key=ZpcHIsGoS63yIluHq0ZqMKbYrW6uf3VI&tag=&rating=g')
+  fetch('https://api.giphy.com/v1/gifs/trending?api_key=ZpcHIsGoS63yIluHq0ZqMKbYrW6uf3VI&limit=100&rating=g')
     .then(res => res.json())
     .then(gifts => gifts)
 

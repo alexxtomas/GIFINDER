@@ -10,7 +10,7 @@ export const initHeader = () => Header()
 const Header = () => {
   app.innerHTML += `
   <header class="header">
-    ${Title('GIFINDER🔍')}
+    ${Title('GIFINDER')}
     ${Nav()}
   </header>`
 }
