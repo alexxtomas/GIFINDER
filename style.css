@@ -290,21 +290,7 @@ main form button:hover {
   box-shadow: none;
 }
 
-/* Footer  */
 
-.gallery {
-  border: 1px solid red;
-}
-
-footer {
-  display: flex;
-  border: 1px solid #fff
-}
-
-.giphy img {
-  width: 60px;
-  height: 100px;
-}
 
 
 
